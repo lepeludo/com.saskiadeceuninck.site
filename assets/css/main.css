@@ -1,0 +1,259 @@
+@import "bootstrap.css";
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.titleLoader{
+    font-family: 'Cabin Condensed', sans-serif;
+    margin-top: 2vh;
+    height: 80vh;
+    min-height: 450px;
+}
+
+.content {
+    font-family: 'Cabin Condensed', sans-serif;
+    margin-top: 2vh;
+    height: 80vh;
+    min-height: 450px;
+}
+
+@media (min-width: 991px) {
+    .content {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .content {
+        position: absolute;
+        text-align: center;
+        left: 5%;
+        top: 25%;
+    }
+
+}
+
+.amorCarr {
+    max-width: 100vw;
+
+}
+
+.carrimg {
+    max-width: 80vw;
+    height: auto;
+}
+
+.fotos {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about {
+    min-height: 70vh;
+}
+
+@media (min-width: 991px) {
+    .about {
+        padding-left: 20vw;
+        overflow: scroll;
+    }
+
+}
+
+.wendyimageholder {
+
+    padding-left: 7vw;
+    position: absolute;
+    width: 100%;
+}
+
+@media (min-width: 991px) {
+    .wendyimageholder {
+        padding-left: 7vw;
+    }
+
+}
+
+.carrouselnav {
+    font-size: 1.4em;
+    position: absolute;
+    padding-top: 30vh;
+    color: black;
+}
+
+.wendyspan {
+}
+
+@media (min-width: 991px) {
+    .wendyspan {
+        z-index: 1;
+        font-size: 1.2em;
+        padding-top: 55vh;
+        max-width: 80%;
+        padding-left: 5vw;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .wendyspan {
+        padding-left: 4vw;
+        text-align: left;
+        z-index: 1;
+        font-size: 1em;
+        padding-top: 25vh;
+        width: 75vw;
+    }
+
+}
+.wendyimage {
+    opacity: 0.20;
+    position: absolute;
+}
+
+.bootimage {
+    opacity: 0.3;
+    position: absolute;
+    z-index: -999;
+}
+
+@media (max-width: 599px) {
+    .bootimage {
+        left: 0;
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .bootimage {
+        left: 25vw;
+        height: 90vh;
+    }
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.head {
+    height: 80%;
+    line-height: 80vh;
+    text-align: center;
+}
+
+.head.titel {
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    .head.titel {
+        padding-left: 30vw;
+    }
+}
+
+@media (min-width: 991px) {
+    .head.subtitel {
+
+        font-size: 2.5em;
+        text-transform: lowercase;
+    }
+}
+
+@media (max-width: 991px) {
+    .head.subtitel {
+        text-align: center;
+        font-size: 1em;
+        text-transform: lowercase;
+    }
+}
+
+.middle {
+    height: 15%;
+    line-height: 15vh;
+    text-align: center;
+}
+
+.middle.titel {
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+
+.middle.subtitel {
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+
+@media (max-width: 991px) {
+    .subtitel {
+        padding-left: 30vw;
+    }
+}
+
+.foot {
+    position: absolute;
+    width: 100vw;
+    height: 20%;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 991px) {
+    .foot {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .foot {
+        top: 5%;
+    }
+
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: auto;
+    max-height: 75vh;
+    margin: auto;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.left {
+    background: none !important;
+    opacity: 0.5;
+}
+
+.carousel-control.left .glyphicon-chevron-left {
+    opacity: 1;
+    color: black;
+}
+
+.carousel-control.right {
+    background: none !important;
+    opacity: 0.5;
+}
+
+.carousel-control.right .glyphicon-chevron-right {
+    opacity: 1;
+    color: black;
+}
