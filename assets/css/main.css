@@ -67,7 +67,7 @@ overflow : hidden;
 @media (min-width: 991px) {
     .about {
         padding-left: 20vw;
-        overflow: scroll;
+        overflow: auto;
     }
 
 }
