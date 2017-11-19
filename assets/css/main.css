@@ -4,6 +4,10 @@
 html{
 overflow : hidden;
 }
+
+.trouw{
+    width: 50%;
+}
 .loader {
     position: fixed;
     left: 0px;
