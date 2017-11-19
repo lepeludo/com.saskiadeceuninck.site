@@ -66,6 +66,9 @@ overflow : hidden;
 
 .about {
     min-height: 70vh;
+    img{
+    width: 50%:
+    }
 }
 
 @media (min-width: 991px) {
