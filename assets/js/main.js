@@ -64,6 +64,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.ohnetitelEnabled = false;
         $scope.amorEnabled = true;
         $scope.bissEnabled = false;
+        $scope.allowBoutEnabled = false;
         $scope.fresh = false;
     }
 
@@ -71,6 +72,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.ohnetitelEnabled = false;
         $scope.bissEnabled = true;
         $scope.fresh = false;
+        $scope.allowBoutEnabled = false;
         $scope.amorEnabled = false;
 
     }
@@ -79,8 +81,15 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.bissEnabled = false;
         $scope.fresh = false;
         $scope.amorEnabled = false;
+        $scope.allowBoutEnabled = false;
         $scope.ohnetitelEnabled = true;
     }
-
+    $scope.allowBout = function(){
+        $scope.bissEnabled = false;
+        $scope.fresh = false;
+        $scope.amorEnabled = false;
+        $scope.ohnetitelEnabled = false;
+        $scope.allowBoutEnabled = true;
+    }
 }])
 ;
