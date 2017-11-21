@@ -63,18 +63,19 @@ overflow : hidden;
     text-align: center;
     font-size: 1.5em;
 }
+
+.about {
+    min-height: 70vh;
+
+}
+
 @media (max-width: 991px) {
     .subtitel {
         line-height: 10em;
     }
 }
 
-.about {
-    min-height: 70vh;
-    img{
-    width: 50%:
-    }
-}
+
 
 @media (min-width: 991px) {
     .about {
