@@ -1,6 +1,7 @@
 /**
  * Created by bramdeveirman on 16/06/15.
  */
+screen.orientation.lock('portrait');
 var myApp = angular.module('saskia', []);
 
 var player;
