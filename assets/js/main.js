@@ -42,6 +42,12 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
 // this function gets called when API is ready to use
     window.onYouTubePlayerAPIReady = function () {
         player = new YT.Player('video', {
+            playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'rel' : 0,
+                'fs' : 0
+            },
             events: {
                 // call this function when player is ready to use
                 'onReady': onPlayerReady
@@ -126,12 +132,13 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         player.pauseVideo();
     }
     $scope.allowBout = function(){
+        player.playVideo();
         $scope.bissEnabled = false;
         $scope.fresh = false;
         $scope.amorEnabled = false;
         $scope.ohnetitelEnabled = false;
         $scope.allowBoutEnabled = true;
-        player.playVideo();
+
     }
 }])
 ;

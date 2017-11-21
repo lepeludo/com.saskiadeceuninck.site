@@ -63,6 +63,11 @@ overflow : hidden;
     text-align: center;
     font-size: 1.5em;
 }
+@media (max-width: 991px) {
+    .subtitel {
+        line-height: 10em;
+    }
+}
 
 .about {
     min-height: 70vh;
@@ -158,12 +163,16 @@ a {
 a:hover {
     text-decoration: none;
 }
-
 .head {
-    height: 80%;
-    line-height: 80vh;
     text-align: center;
 }
+@media (min-width: 991px) {
+    .head {
+        height: 80%;
+        line-height: 80vh;
+    }
+}
+
 
 .head.titel {
     font-size: 6vw;
@@ -178,7 +187,6 @@ a:hover {
 
 @media (min-width: 991px) {
     .head.subtitel {
-
         font-size: 2.5em;
         text-transform: lowercase;
     }
@@ -186,7 +194,9 @@ a:hover {
 
 @media (max-width: 991px) {
     .head.subtitel {
+        padding-left: 30vw;
         text-align: center;
+        width: 100%;
         font-size: 1em;
         text-transform: lowercase;
     }
@@ -209,9 +219,9 @@ a:hover {
 }
 
 @media (max-width: 991px) {
-    .subtitel {
-        padding-left: 30vw;
-    }
+    /*.subtitel {*/
+        /*padding-left: 30vw;*/
+    /*}*/
 }
 
 .foot {
@@ -232,6 +242,7 @@ a:hover {
 
 @media (max-width: 991px) {
     .foot {
+        line-height: 2em;
         top: 5%;
     }
 
