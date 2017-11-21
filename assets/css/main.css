@@ -76,11 +76,17 @@ overflow : hidden;
     }
 }
 
+@media (max-width: 991px) {
+    .about {
+       font-size: 2em;
+        overflow: scroll;
+    }
 
+}
 
 @media (min-width: 991px) {
     .about {
-        padding-left: 20vw;
+        padding-left: 0vw;
         overflow: auto;
     }
 
