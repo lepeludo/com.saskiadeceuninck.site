@@ -40,12 +40,13 @@ overflow : hidden;
 }
 
 @media (max-width: 991px) {
-    /*.content {*/
-        /*position: absolute;*/
-        /*text-align: center;*/
-        /*left: 5%;*/
-        /*top: 25%;*/
-    /*}*/
+    .content {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 5%;
+        top: 25%;
+    }
 
 }
 
