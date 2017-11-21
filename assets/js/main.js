@@ -7,7 +7,6 @@ var myApp = angular.module('saskia', []);
 var player;
 
 myApp.controller('IndexController', ['$scope', function ($scope) {
-    screen.orientation.lock('portrait');
     $scope.fresh = true;
     $scope.showIndex = true;
     $scope.showOver = false;
