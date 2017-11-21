@@ -72,14 +72,15 @@ overflow : hidden;
 
 @media (max-width: 991px) {
     .subtitel {
-        line-height: 10em;
+        font-size: 2em;
     }
 }
+
 
 @media (max-width: 991px) {
     .about {
        font-size: 2em;
-        overflow: scroll;
+        overflow: scroll; !important;
     }
 
 }
