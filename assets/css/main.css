@@ -243,6 +243,7 @@ a:hover {
 
 @media (max-width: 991px) {
     .foot {
+        font-size: 2em;
         line-height: 2em;
         top: 5%;
     }
