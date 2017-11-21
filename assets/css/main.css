@@ -204,10 +204,10 @@ a:hover {
 
 @media (max-width: 991px) {
     .head.subtitel {
-        padding-left: 30vw;
+        /*padding-left: 30vw;*/
         text-align: center;
         width: 100%;
-        font-size: 1em;
+        font-size: 2em;
         text-transform: lowercase;
     }
 }
