@@ -44,7 +44,7 @@ overflow : hidden;
         position: absolute;
         text-align: center;
         width: 100%;
-        left: 5%;
+        /*left: 5%;*/
         top: 25%;
     }
 
@@ -67,7 +67,8 @@ overflow : hidden;
 
 .about {
     min-height: 70vh;
-
+    width: 100%;
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -95,7 +96,7 @@ overflow : hidden;
 
 .wendyimageholder {
 
-    padding-left: 7vw;
+    /*padding-left: 7vw;*/
     position: absolute;
     width: 100%;
 }
@@ -123,14 +124,14 @@ overflow : hidden;
         font-size: 1.2em;
         padding-top: 55vh;
         max-width: 80%;
-        padding-left: 5vw;
+        /*padding-left: 5vw;*/
     }
 
 }
 
 @media (max-width: 991px) {
     .wendyspan {
-        padding-left: 4vw;
+        /*padding-left: 4vw;*/
         text-align: left;
         z-index: 1;
         font-size: 1em;
@@ -160,7 +161,7 @@ overflow : hidden;
 
 @media (min-width: 600px) {
     .bootimage {
-        left: 25vw;
+        /*left: 25vw;*/
         height: 90vh;
     }
 }
@@ -191,7 +192,7 @@ a:hover {
 @media (max-width: 991px) {
     .head.titel {
         padding-top: 15vh;
-        padding-left: 30vw;
+        /*padding-left: 30vw;*/
     }
 }
 
@@ -210,7 +211,12 @@ a:hover {
         font-size: 2em;
         text-transform: lowercase;
     }
+    .mail{
+        padding-top: 30vh;
+        font-size: 2em;
+    }
 }
+
 
 .middle {
     height: 15%;
