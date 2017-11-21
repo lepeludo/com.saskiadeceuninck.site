@@ -3,6 +3,8 @@
  */
 var myApp = angular.module('saskia', []);
 
+var player;
+
 myApp.controller('IndexController', ['$scope', function ($scope) {
     $scope.fresh = true;
     $scope.showIndex = true;
@@ -27,6 +29,43 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.showFriends = false;
         $scope.showAgenda = false;
     }
+
+
+// https://developers.google.com/youtube/iframe_api_reference
+
+// global variable for the player
+// Inject YouTube API script
+    var tag = document.createElement('script');
+    tag.src = "//www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// this function gets called when API is ready to use
+    window.onYouTubePlayerAPIReady = function () {
+        player = new YT.Player('video', {
+            events: {
+                // call this function when player is ready to use
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+
+        // bind events
+        var playButton = document.getElementById("play-button");
+        playButton.addEventListener("click", function() {
+            player.playVideo();
+        });
+
+        var pauseButton = document.getElementById("pause-button");
+        pauseButton.addEventListener("click", function() {
+            player.pauseVideo();
+        });
+
+    }
+
+
+
 
     $scope.doShowAgenda = function () {
         init();
@@ -66,6 +105,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.bissEnabled = false;
         $scope.allowBoutEnabled = false;
         $scope.fresh = false;
+        player.pauseVideo();
     }
 
     $scope.allowBiss = function () {
@@ -74,7 +114,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.fresh = false;
         $scope.allowBoutEnabled = false;
         $scope.amorEnabled = false;
-
+        player.pauseVideo();
     }
 
     $scope.allowOhne = function(){
@@ -83,6 +123,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.amorEnabled = false;
         $scope.allowBoutEnabled = false;
         $scope.ohnetitelEnabled = true;
+        player.pauseVideo();
     }
     $scope.allowBout = function(){
         $scope.bissEnabled = false;
@@ -90,6 +131,7 @@ myApp.controller('IndexController', ['$scope', function ($scope) {
         $scope.amorEnabled = false;
         $scope.ohnetitelEnabled = false;
         $scope.allowBoutEnabled = true;
+        player.playVideo();
     }
 }])
 ;
