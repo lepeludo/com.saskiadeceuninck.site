@@ -1,6 +1,6 @@
 <div class="row fotos subtitel" ng-class="{head:fresh}">
     <div class="col-lg-3 col-md-3 col-sm-3 col col-xs-12">
-        <a href="#"  ng-click="allowAmor()">Amòr 'Allez</a>
+        <a href="#" ng-click="allowAmor()">Amòr 'Allez</a>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col col-xs-12">
         <a href="#" ng-click="allowBiss()">Kastanjestraat 111</a>
@@ -8,15 +8,15 @@
     <div class="col-lg-3 col-md-3 col-sm-3 col col-xs-12">
         <a href="#" ng-click="allowOhne()">Ohne Titel #1</a>
     </div>
-     <div class="col-lg-3 col-md-3 col-sm-3 col col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-3 col col-xs-12">
         <a href="#" ng-click="allowBout()">Boutique Extraordinaire</a>
     </div>
-    </div>
+</div>
 <div ng-show="amorEnabled" class="row amorCarr">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" width="100" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="item" ng-repeat="image in amorImages" ng-class="{active : $first}">
-                <img src="assets/images/amor/{{image}}" class ="carrimg" alt="image" width="100">
+                <img src="assets/images/amor/{{image}}" class="carrimg" alt="image" width="100">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -34,7 +34,7 @@
     <div id="myCarouselBiss" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="item" ng-repeat="image in bissImages" ng-class="{active : $first}">
-                <img src="assets/images/bissegem/{{image}}" alt="image" class ="carrimg">
+                <img src="assets/images/bissegem/{{image}}" alt="image" class="carrimg">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -54,7 +54,7 @@
     <div id="myCarouselOhne" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="item" ng-repeat="image in ohneImages" ng-class="{active : $first}">
-                <img src="assets/images/ohne/{{image}}" alt="image" class ="carrimg">
+                <img src="assets/images/ohne/{{image}}" alt="image" class="carrimg">
             </div>
         </div>
         <!-- Left and right controls -->
@@ -71,18 +71,43 @@
     </div>
 </div>
 <div ng-show="allowBoutEnabled" class="row amorCarr">
-   <div class="video">
-       <iframe src="https://www.youtube.com/embed/xjaObAswZiI" onload="this.width=screen.width*0.6;this.height=screen.height;">
-</iframe>
+    <div class="col-md-6 col-md-offset-3">
+        <style>.embed-container {
+            position: relative;
+            padding-top: 20%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe, .embed-container object, .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }</style>
+        <div class='embed-container'>
+            <iframe src='https://www.youtube.com/embed/xjaObAswZiI' frameborder='0' allowfullscreen></iframe>
+        </div>
     </div>
+
 </div>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-75657966-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-75657966-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
